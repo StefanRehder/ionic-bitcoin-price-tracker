@@ -9,7 +9,13 @@
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "build:android": "ionic cordova build android --device",
+    "build:ios": "ionic cordova build ios --device",
+    "run:android": "ionic cordova run android --device --livereload --consolelogs",
+    "run:ios": "ionic cordova run ios --device --livereload --consolelogs",
+    "emulate:android": "ionic cordova emulate android --livereload --consolelogs",
+    "emulate:ios": "ionic cordova emulate ios --livereload --consolelogs"
   },
   "dependencies": {
     "@angular/animations": "5.2.10",

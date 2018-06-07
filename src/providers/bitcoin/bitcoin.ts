@@ -9,7 +9,7 @@ export class BitcoinProvider {
     'https://apiv2.bitcoinaverage.com/indices/global/ticker/BTC';
 
   constructor(private http: HttpClient) {
-    console.log('Hello BitcoinProvider Provider');
+
   }
 
   public getBitcoinPrice(currency: string) {
