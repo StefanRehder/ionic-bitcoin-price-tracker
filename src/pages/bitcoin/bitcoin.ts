@@ -10,8 +10,8 @@ import { Observable } from 'rxjs/Observable';
   templateUrl: 'bitcoin.html',
 })
 export class BitcoinPage {
-  currency: string = 'GBP'
-  bitcoin$: Observable<Bitcoin>
+  currency: string = 'DKK';
+  bitcoin$: Observable<Bitcoin>;
 
   constructor(private bitcoinProvider: BitcoinProvider) {
   }
