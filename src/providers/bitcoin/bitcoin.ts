@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Bitcoin } from '../../models/bitcoin.model';
 
 @Injectable()
 export class BitcoinProvider {
@@ -11,8 +13,8 @@ export class BitcoinProvider {
     console.log('Hello BitcoinProvider Provider');
   }
 
-  getBitcoinPrice(currency: string) {
-    return this.http.get(`${this.ROOT_URL}${currency}`)
+  public getBitcoinPrice(currency: string) {
+    return this.http.get<Bitcoin>(`${this.ROOT_URL}${currency}`)
   }
 
 }

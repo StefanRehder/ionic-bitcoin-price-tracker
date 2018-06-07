@@ -20,7 +20,7 @@ export class BitcoinPage {
     this.getBitcoinPrice();
   }
 
-  getBitcoinPrice() {
+  private getBitcoinPrice() {
     this.bitcoin$ = this.bitcoinProvider.getBitcoinPrice(this.currency);
   }
 
