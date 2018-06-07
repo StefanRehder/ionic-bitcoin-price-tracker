@@ -27,7 +27,7 @@
     <ion-label>
       Select Currency
     </ion-label>
-    <ion-select [(ngModel)]="currency">
+    <ion-select [(ngModel)]="currency" (ionChange)="getBitcoinPrice()">
       <ion-option value="DKK">DKK</ion-option>
       <ion-option value="GBP">GBP</ion-option>
       <ion-option value="USD">USD</ion-option>
